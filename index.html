@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mba Dio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff5d8f);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: pop-up 1s ease-in-out;
+            max-width: 90%;
+            width: 400px;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 2rem;
+            margin: 0;
+            letter-spacing: 2px;
+            text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin: 15px 0 0;
+            color: #ffd1dc;
+        }
+
+        .confetti {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .confetti div {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            animation: fall 5s linear infinite;
+            opacity: 0.9;
+            border-radius: 50%;
+        }
+
+        .cake {
+            margin: 20px auto;
+            position: relative;
+            width: 80px;
+            height: 100px;
+        }
+
+        .cake .layer {
+            position: absolute;
+            width: 100%;
+            background: #8B4513;
+            border-radius: 10px;
+        }
+
+        .cake .layer:nth-child(1) {
+    height: 30px;
+    top: 0;
+    background: #ff69b4; /* Pink color */
+}
+
+.cake .layer:nth-child(2) {
+    height: 40px;
+    top: 30px;
+    background: #ff1493; /* Darker pink color */
+}
+
+.cake .layer:nth-child(3) {
+    height: 30px;
+    top: 70px;
+    background: #ff77ff; /* Lighter pink color */
+}
+
+        .candle {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 15px;
+            background: #ffcc00;
+            border-radius: 5px;
+        }
+
+        .flame {
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 6px;
+            height: 10px;
+            background: radial-gradient(circle, #fff 30%, #ff4500 70%);
+            border-radius: 50%;
+            animation: flicker 0.5s infinite;
+        }
+
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.7;
+            }
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100%) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        @keyframes pop-up {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        button {
+            background: #ff69b4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.7);
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 0.8rem;
+            }
+
+            .cake {
+                width: 70px;
+                height: 90px;
+            }
+
+            .cake .layer {
+                border-radius: 8px;
+            }
+
+            button {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="confetti">
+        <!-- Confetti animation -->
+        <div style="left: 10%; animation-delay: 0s;"></div>
+        <div style="left: 20%; animation-delay: 1s;"></div>
+        <div style="left: 30%; animation-delay: 2s;"></div>
+        <div style="left: 40%; animation-delay: 1.5s;"></div>
+        <div style="left: 50%; animation-delay: 0.5s;"></div>
+        <div style="left: 60%; animation-delay: 0.8s;"></div>
+        <div style="left: 70%; animation-delay: 2.2s;"></div>
+        <div style="left: 80%; animation-delay: 0.7s;"></div>
+        <div style="left: 90%; animation-delay: 1.3s;"></div>
+    </div>
+    <div class="card">
+        <h1>Happy Birthday, Mba Dio!</h1>
+        <p>Semoga Semua Yang Disemogakan Terkabul, Aminnn </p>
+        <div class="cake">
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+        <button onclick="document.getElementById('birthday-audio').play()">Play Music</button>
+    </div>
+    <audio id="birthday-audio">
+        <source src="hbd.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
